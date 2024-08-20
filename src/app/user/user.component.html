@@ -1,0 +1,24 @@
+<div class="container">
+    <!-- <div *ngFor="let data of userData">
+        <h1 >{{data.id}}</h1>
+        <h2>{{data.userId}}</h2>
+        <p>{{data.title}}</p>
+        <p>{{data.body}}</p>
+    </div> -->
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div *ngFor="let data of userData" class="card mb-4">
+        
+                <div class="card-body">
+                    <h3 class="text-primary">{{data.userId}}</h3>
+                    <h4 class="text-success">{{data.id}}</h4>
+                    <h5 class="card-title">{{data.title}}</h5>
+                    <p class="card-text">{{data.body}}</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+           
+          </div>
+        </div>
+    </div>
+</div>
